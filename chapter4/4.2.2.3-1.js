@@ -15,6 +15,14 @@ class EventPractice extends Component{
                     placeholder="아무거나"
                     value={this.state.message}
                 />
+                <button onClick={
+                    () => {
+                        alert(this.state.message);
+                        this.setState({
+                            message: ''
+                        });
+                    }
+                }>확인</button>
             </div>
         );
     }
