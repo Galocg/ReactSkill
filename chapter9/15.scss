@@ -1,0 +1,8 @@
+.SassComponent {
+    display: flex;
+    background: $oc-gray-2;
+    @include media(‘<768px‘) {
+      background: $oc-gray-9;
+    }
+    (…)
+  }
